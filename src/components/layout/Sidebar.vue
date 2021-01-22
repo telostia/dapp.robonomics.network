@@ -36,7 +36,7 @@
         exact
       >
         {{ $t("menu.lighthouses") }}
-      </router-link>
+      </router-link>      
       <a href="https://parachain.robonomics.network/" target="_blank">
         {{ $t("menu.parachain") }}
       </a>
@@ -51,6 +51,13 @@
       </a>
       <router-link v-else :to="{ name: 'uniswap' }" active-class="active" exact>
         {{ $t("menu.uniswap") }}
+      </router-link>
+      <router-link
+        :to="{ name: 'rws' }"
+        active-class="active"
+        exact
+      >
+        {{ $t("menu.rws") }}
       </router-link>
       <router-link :to="{ name: 'xrt-for-vote' }" active-class="active" exact>
         {{ $t("menu.votes") }}

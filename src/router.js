@@ -12,6 +12,7 @@ import Approve from "@/views/Approve";
 import Results from "@/views/Results";
 import Uniswap from "@/views/Uniswap";
 import services from "@/services";
+import RWS from "@/views/RWS";
 
 Vue.use(Router);
 
@@ -73,6 +74,12 @@ export default new Router({
       path: "/uniswap/:referral?",
       name: "uniswap",
       component: Uniswap,
+      props: true
+    },
+    {
+      path: "/rws",
+      name: "rws",
+      component: RWS,
       props: true
     },
     ...Object.values(services)
